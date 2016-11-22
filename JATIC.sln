@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{1E89038F-DFB9-9796-9CC6-AAC1576AB1D5}") = "JATIC", "Assembly-CSharp.csproj", "{C46E7837-E804-3C9B-24A4-3F1095DFBFB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C46E7837-E804-3C9B-24A4-3F1095DFBFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46E7837-E804-3C9B-24A4-3F1095DFBFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46E7837-E804-3C9B-24A4-3F1095DFBFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46E7837-E804-3C9B-24A4-3F1095DFBFB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
