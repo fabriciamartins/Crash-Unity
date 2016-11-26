@@ -13,6 +13,10 @@ public class CharacterMotor : MonoBehaviour
 
 	private Rigidbody rigid;
 
+	//Added
+	public float smooth = 2.0F;
+	public float tiltAngle = 30.0F;
+
 	void Awake()
 	{
 		rigid = GetComponent<Rigidbody>();
@@ -33,6 +37,19 @@ public class CharacterMotor : MonoBehaviour
 			pMat.staticFriction = 0f;
 			GetComponent<Collider>().material = pMat;
 			Debug.LogWarning("No physics material found for CharacterMotor, a frictionless one has been created and assigned", transform);
+		}
+	}
+
+	void OnTriggerEnter(Collider other) {
+		if (other.CompareTag ("mudarCamera")) {
+			Debug.Log ("Entrou");
+
+			var rotateX = Random.Range (0, 50);
+			Camera.main.transform.eulerAngles = new Vector3 (0,0,50);
+			//float tiltAroundZ = Input.GetAxis ("Horizontal") * tiltAngle;
+			//float tiltAroundX = Input.GetAxis ("Vertical") * tiltAngle;
+			//Quaternion target = Quaternion.Euler (tiltAroundX, 0, tiltAroundZ);
+			//transform.rotation = Quaternion.Slerp (transform.rotation, target, Time.deltaTime * smooth);
 		}
 	}
 	

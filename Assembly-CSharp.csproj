@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C46E7837-E804-3C9B-24A4-3F1095DFBFB0}</ProjectGuid>
+    <ProjectGuid>{7DBE7514-9BAE-B058-EF48-24B5313CA503}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,6 +58,7 @@
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Hazard.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Health.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\MoveToPoints.cs" />
+     <Compile Include="Assets\Physics Platformer Kit\Scripts\PlayerMelee.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\PlayerMove.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Throwing.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\TriggerParent.cs" />
