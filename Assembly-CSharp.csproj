@@ -52,6 +52,7 @@
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Coin.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\DealDamage.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\DestroyObject.cs" />
+     <Compile Include="Assets\Physics Platformer Kit\Scripts\DestroyObjectPulo.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\GUIManager.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Goal.cs" />

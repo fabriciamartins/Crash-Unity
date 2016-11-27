@@ -51,6 +51,11 @@ public class CharacterMotor : MonoBehaviour
 			//Quaternion target = Quaternion.Euler (tiltAroundX, 0, tiltAroundZ);
 			//transform.rotation = Quaternion.Slerp (transform.rotation, target, Time.deltaTime * smooth);
 		}
+
+		if (other.CompareTag ("caixaDestrutivel")) {
+			Debug.Log ("Entrou caixa Destrutivel");
+			other.GetComponent<Health>().currentHealth = 0;
+		}
 	}
 	
 	//move rigidbody to a target and return the bool "have we arrived?"

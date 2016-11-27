@@ -33,6 +33,9 @@ public class Health : MonoBehaviour
 	private Throwing throwing;
 	private Renderer flashRender;
 	private AudioSource aSource;
+
+	//Added
+	public GameObject bonus;
 	
 	//setup
 	void Awake()
@@ -107,17 +110,19 @@ public class Health : MonoBehaviour
 			AudioSource.PlayClipAtPoint(deadSound, transform.position);
 		flashing = false;
 		flashObject.GetComponent<Renderer>().material.color = originalColor;
-		if(respawn)
-		{
-			Rigidbody rigid = GetComponent<Rigidbody>();
-			if(rigid)
+		if (respawn) {
+			Rigidbody rigid = GetComponent<Rigidbody> ();
+			if (rigid)
 				rigid.velocity *= 0;
 			transform.position = respawnPos;
 			dead = false;
 			currentHealth = defHealth;
-		}
-		else
+		} else {
+			bonus.transform.position = new Vector3 (transform.position.x, transform.position.y,transform.position.z);
+			Instantiate (bonus);
 			Destroy (gameObject);
+		}
+			
 		
 		if (spawnOnDeath.Length != 0)
 			foreach(GameObject obj in spawnOnDeath)
