@@ -39,24 +39,7 @@ public class CharacterMotor : MonoBehaviour
 			Debug.LogWarning("No physics material found for CharacterMotor, a frictionless one has been created and assigned", transform);
 		}
 	}
-
-	void OnTriggerEnter(Collider other) {
-		if (other.CompareTag ("mudarCamera")) {
-			Debug.Log ("Entrou");
-
-			var rotateX = Random.Range (0, 50);
-			Camera.main.transform.eulerAngles = new Vector3 (0,0,50);
-			//float tiltAroundZ = Input.GetAxis ("Horizontal") * tiltAngle;
-			//float tiltAroundX = Input.GetAxis ("Vertical") * tiltAngle;
-			//Quaternion target = Quaternion.Euler (tiltAroundX, 0, tiltAroundZ);
-			//transform.rotation = Quaternion.Slerp (transform.rotation, target, Time.deltaTime * smooth);
-		}
-
-		if (other.CompareTag ("caixaDestrutivel")) {
-			Debug.Log ("Entrou caixa Destrutivel");
-			other.GetComponent<Health>().currentHealth = 0;
-		}
-	}
+		
 	
 	//move rigidbody to a target and return the bool "have we arrived?"
 	public bool MoveTo(Vector3 destination, float acceleration, float stopDistance, bool ignoreY)
