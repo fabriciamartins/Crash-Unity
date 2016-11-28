@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Physics Platformer Kit\Misc\DemoTextFade.cs" />
+     <Compile Include="Assets\Physics Platformer Kit\Scripts\ButtonSair.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\CharacterMotor.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Checkpoint.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Physics Platformer Kit\Scripts\MoveToPoints.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\PlayerMelee.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\PlayerMove.cs" />
+     <Compile Include="Assets\Physics Platformer Kit\Scripts\PlayerWallJump.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Throwing.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\TriggerParent.cs" />
      <Compile Include="Assets\Physics Platformer Kit\Scripts\Water.cs" />
