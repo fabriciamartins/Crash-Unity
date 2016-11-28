@@ -7,6 +7,7 @@ public class Goal : MonoBehaviour
 	public float lift;				//the lifting force applied to player when theyre inside the goal
 	public float loadDelay;			//how long player must stay inside the goal, before the game moves onto the next level
 	public int nextLevelIndex;	//scene index of the next level
+	public Canvas canvas;
 	
 	private float counter;
 	
@@ -26,8 +27,12 @@ public class Goal : MonoBehaviour
 		if (other.tag == "Player")
 		{
 			counter += Time.deltaTime;
-			if(counter > loadDelay)
-				Application.LoadLevel (nextLevelIndex);
+			if (counter > loadDelay) {
+				//Application.LoadLevel (nextLevelIndex);
+				Debug.Log("Canvas Final");
+				canvas.gameObject.SetActive (true);
+				//GetComponent<PlayerMove> ().enabled = false;
+			}
 		}
 	}
 	
