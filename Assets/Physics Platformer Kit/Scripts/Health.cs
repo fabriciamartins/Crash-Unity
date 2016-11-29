@@ -118,8 +118,10 @@ public class Health : MonoBehaviour
 			dead = false;
 			currentHealth = defHealth;
 		} else {
-			bonus.transform.position = new Vector3 (transform.position.x, transform.position.y,transform.position.z);
-			Instantiate (bonus);
+			if (gameObject.tag != "Enemy") {
+				bonus.transform.position = new Vector3 (transform.position.x, transform.position.y,transform.position.z);
+				Instantiate (bonus);
+			}
 			Destroy (gameObject);
 		}
 			
